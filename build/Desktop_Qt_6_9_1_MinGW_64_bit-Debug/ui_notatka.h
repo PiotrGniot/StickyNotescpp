@@ -39,6 +39,8 @@ public:
         if (notatka->objectName().isEmpty())
             notatka->setObjectName("notatka");
         notatka->resize(500, 600);
+        notatka->setMinimumSize(QSize(500, 600));
+        notatka->setMaximumSize(QSize(500, 600));
         przyciskZapisz = new QPushButton(notatka);
         przyciskZapisz->setObjectName("przyciskZapisz");
         przyciskZapisz->setGeometry(QRect(70, 30, 75, 51));

@@ -55,6 +55,8 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(StickyNotes->sizePolicy().hasHeightForWidth());
         StickyNotes->setSizePolicy(sizePolicy);
+        StickyNotes->setMinimumSize(QSize(450, 600));
+        StickyNotes->setMaximumSize(QSize(450, 600));
         actionNowa = new QAction(StickyNotes);
         actionNowa->setObjectName("actionNowa");
         actionKosz = new QAction(StickyNotes);
