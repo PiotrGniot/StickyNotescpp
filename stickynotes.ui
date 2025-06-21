@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StickyNotes</class>
+ <widget class="QMainWindow" name="StickyNotes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>StickyNotes</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="przyciskNowa">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nowa notatka</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="przyciskKosz">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kosz</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="przyciskZarzadzaj">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zarządzaj</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listaNotatek">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>421</width>
+      <height>431</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="panelZarzadzania" native="true">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>321</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="przyciskUsunZaznaczone">
+       <property name="text">
+        <string>Usuń zaznaczone</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="przyciskZakonczZarzadzanie">
+       <property name="text">
+        <string>Zakończ zarządzanie</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>450</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPlik">
+    <property name="title">
+     <string>Plik</string>
+    </property>
+    <addaction name="actionNowa"/>
+    <addaction name="actionKosz"/>
+    <addaction name="separator"/>
+    <addaction name="actionZamknij_program"/>
+   </widget>
+   <widget class="QMenu" name="menuPomoc">
+    <property name="title">
+     <string>Pomoc</string>
+    </property>
+    <addaction name="actionPomoc"/>
+   </widget>
+   <addaction name="menuPlik"/>
+   <addaction name="menuPomoc"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNowa">
+   <property name="text">
+    <string>Nowa</string>
+   </property>
+  </action>
+  <action name="actionKosz">
+   <property name="text">
+    <string>Kosz</string>
+   </property>
+  </action>
+  <action name="actionZamknij_program">
+   <property name="text">
+    <string>Zamknij program</string>
+   </property>
+  </action>
+  <action name="actionZarz_dzaj">
+   <property name="text">
+    <string>Zarządzaj</string>
+   </property>
+  </action>
+  <action name="actionPomoc">
+   <property name="text">
+    <string>Pomoc</string>
+   </property>
+   <property name="toolTip">
+    <string>Pomoc</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
