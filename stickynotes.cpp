@@ -257,7 +257,7 @@ void StickyNotes::on_actionZamknij_program_triggered()
 
 void StickyNotes::on_actionPomoc_triggered()
 {
-    QString link = "http://www.google.com";
+    QString link = "https://github.com/PiotrGniot/StickyNotescpp/blob/3022bfcd8a4e146b61445a6c0a12dbd82d1f6516/instrukcja.md";
     QDesktopServices::openUrl(QUrl(link));
 }
 
