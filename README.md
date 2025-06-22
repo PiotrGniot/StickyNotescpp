@@ -85,7 +85,7 @@ StickyNotes/
 
 ## 4. Wykorzystanie Koncepcji Programowania Obiektowego
 
-Projekt `StickyNotes` jest zbudowany w oparciu o paradygmat obiektowy, wykorzystując jego kluczowe elementy:
+Projekt `StickyNotes` jest zbudowany na elementach programowania obiektowego:
 
 * **Klasy i Obiekty:** Cały projekt opiera się na dwóch głównych klasach: `StickyNotes` i `Notatka`. Obiekty (instancje) tych klas są tworzone w czasie działania programu, np. `Notatka *oknoNotatki = new Notatka();` tworzy nowy obiekt okna edycji.
 * **Hermetyzacja (Enkapsulacja):** Dane członkowskie klas (`m_sciezkaKatalogu`, `m_trybZarzadzania` w `StickyNotes` czy `m_sciezkaPliku` w `Notatka`) są zadeklarowane jako `private`. Dostęp do nich i manipulacja nimi odbywa się wyłącznie poprzez publiczne metody (interfejs) klasy, np. `wczytajNotatke(...)`. Chroni to wewnętrzny stan obiektu przed niekontrolowanymi modyfikacjami z zewnątrz.
