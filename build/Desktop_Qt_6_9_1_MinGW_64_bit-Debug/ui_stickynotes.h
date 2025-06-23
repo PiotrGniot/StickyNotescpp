@@ -82,6 +82,10 @@ public:
         listaNotatek = new QListWidget(centralwidget);
         listaNotatek->setObjectName("listaNotatek");
         listaNotatek->setGeometry(QRect(10, 120, 421, 431));
+        QFont font;
+        font.setPointSize(14);
+        listaNotatek->setFont(font);
+        listaNotatek->viewport()->setProperty("cursor", QVariant(QCursor(Qt::CursorShape::PointingHandCursor)));
         panelZarzadzania = new QWidget(centralwidget);
         panelZarzadzania->setObjectName("panelZarzadzania");
         panelZarzadzania->setGeometry(QRect(70, 70, 321, 42));

@@ -16,6 +16,8 @@ StickyNotes::StickyNotes(QWidget *parent)
 {
     ui->setupUi(this);
     ui->panelZarzadzania->setVisible(false);
+    QIcon icon(":/ikona/zasoby/ikonka.png");
+    setWindowIcon(icon);
 
     this->setWindowTitle("StickyNotes - Menedżer");
 

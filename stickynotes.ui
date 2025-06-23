@@ -80,6 +80,14 @@
       <height>431</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
    </widget>
    <widget class="QWidget" name="panelZarzadzania" native="true">
     <property name="geometry">
