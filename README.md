@@ -24,6 +24,9 @@ StickyNotes/
 │
 ├── notatki/                  # Automatycznie tworzony folder na pliki notatek (.txt)
 │
+│
+├── zasoby/                   # Zasoby do projektu
+│
 ├── notatka.h                 # Plik nagłówkowy klasy Notatka (okno edycji)
 ├── notatka.cpp               # Plik źródłowy klasy Notatka
 ├── notatka.ui                # Plik interfejsu
